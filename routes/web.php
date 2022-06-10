@@ -13,6 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// });
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/login', function () {
+    return view('login')->middleware('protected');
+});
+
+Route::get('/register', function () {
+    return view('register');
+});
+
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::group(['middleware'=>['protectedPage']],function(){
+    Route::view('login','login');
 });
