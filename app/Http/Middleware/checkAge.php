@@ -16,7 +16,7 @@ class checkAge
      */
     public function handle(Request $request, Closure $next)
     {
-        echo " globle msg for all page";
+        //echo " globle msg for all page";
         if($request->age && $request->age<18){
             return redirect ('login');
         }
