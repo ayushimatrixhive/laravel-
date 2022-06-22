@@ -18,14 +18,5 @@ class personController extends Controller
         $password = $request->input('password');
         echo '<br>password : '.$password;
     }
-
-    public function update(Request $request, $id)
-        {
-            //
-            $id = $request->input('name');
-            echo 'name : '.$id;
-        }
-     
-
    
 }

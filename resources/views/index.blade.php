@@ -123,6 +123,12 @@ footer {
 
 <header>
   <h3>welcome index page</h3>
+  {{URL:: full ()}}
+  <br>
+  <a href="{{URL::to ('/test')}}">Test</a>
+  <br>
+  <a href="{{URL::to ('/update')}}">Update</a>
+  
 </header>
 
 <div class="container">

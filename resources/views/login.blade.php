@@ -57,7 +57,7 @@
             <div class="bg-default text-danger text-center" id="message"></div>
             <hr>
             <label for="email">Name:</label>
-            <input type="text" name="name" placeholder="Enter name" class="form-control" id="myname">        
+            <input type="text" name="name"  placeholder="Enter name" class="form-control" id="myname">        
             <br>
             <label for="email" >Password:</label>
             <input type="password" name="pass" placeholder="Enter password" class="form-control" id="mypass">         
